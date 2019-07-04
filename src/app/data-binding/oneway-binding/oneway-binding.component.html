@@ -1,0 +1,10 @@
+<!-- Interpolation -->
+<div>{{name}}</div>
+
+<input type="text" value="{{name}}">
+
+<!-- Property Binding, # là ID trong angular -->
+<input type="text" [value]="name" #thamso>
+
+<!-- Event Binding -->
+<button class="btn btn-success" (click)="eventBinding(thamso.value)" >Event Binding</button>

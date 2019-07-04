@@ -1,0 +1,14 @@
+<h1>Register Form</h1>
+
+<p>Email:</p>
+<input type="email" [value]="email" [(ngModel)]="email">
+
+<!-- //# ko được trùng tên biến bên TS -->
+<p>Fullname</p>
+<input type="text" #thamso>
+
+<br>
+<button class="btn btn-danger" (click) = "eventBinding(thamso.value)">Submit</button>
+
+<p>Email: {{email}}</p>
+<p>Fullname: {{name}}</p>

@@ -1,0 +1,23 @@
+* Component
+* Module
+
+Lệnh tạo Component => ng g c <Tên Component>
+Lệnh tạo Module => ng g m <Tên Module>
+Lệnh tạo Component trong Module => ng g c --module=<Tên folder Module>
+
+* Gợi ý bài tập về nhà
+- BaiTapModule
+	+ HeaderComponent
+	+ Carousel
+	+ ItemSanPham
+	+ ListSmartPhone
+		ItemSanPham
+		ItemSanPham
+		ItemSanPham
+		ItemSanPham
+	+ ListLapTop
+		ItemSanPham
+		ItemSanPham
+		ItemSanPham
+		ItemSanPham
+	+ PROMOTION

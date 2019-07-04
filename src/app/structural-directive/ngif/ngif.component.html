@@ -1,0 +1,21 @@
+<h3 style="color:red">*ngif</h3>
+
+<!-- nếu biến status = false => thẻ mất đi -->
+<div *ngIf="status">CyberSoft</div>
+
+<button class="btn btn-success" (click)="hidden()">Hidden</button>
+
+<button class="btn btn-danger" (click)="show()">Show</button>
+
+<hr>
+
+<div *ngIf="statusLogin; else NoiDungElse">
+    <p>Xin Chào ! </p>
+    <button class="btn btn-danger" (click) = "dangXuat()">Đăng Xuất</button>
+</div>
+
+<!-- giống hàm, chưa gọi thì ko hiện ra, gọi ra component nào thì component đó mới được sử dụng (thẻ private)  -->
+<ng-template #NoiDungElse>
+    <button class="btn btn-success" (click) = "dangNhap()">Đăng Nhập</button>
+    <h3>Vui lòng đăng nhập</h3>
+</ng-template>
